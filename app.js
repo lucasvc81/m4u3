@@ -26,6 +26,18 @@ app.get('/prueba' , function(req, res, next) {
   res.send('Soy una pagina de prueba')
 });
 
+app.get('/home' , function(req, res, next) {
+  res.send('Soy el Home')
+});
+
+app.get('/nosotros' , function(req, res, next) {
+  res.send('Soy la pagina Nosotros')
+});
+
+app.get('/galeria' , function(req, res, next) {
+  res.send('Soy la galeria de imagenes')
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
